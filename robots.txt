@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://konvertica.net/sitemap.xml
+Sitemap: https://online-tools.pengu1n10998.workers.dev/sitemap.xml

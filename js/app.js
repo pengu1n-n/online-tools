@@ -464,7 +464,7 @@
     $('#url-convert').addEventListener('click', convert);
     $('#url-sample').addEventListener('click', function () {
       mode.value = 'encode';
-      input.value = 'https://konvertica.net/search?q=кофе и чай&sort=по цене';
+      input.value = 'https://online-tools.pengu1n10998.workers.dev/search?q=кофе и чай&sort=по цене';
       setStatus('Пример загружен', 'ok');
     });
     $('#url-swap').addEventListener('click', function () {
