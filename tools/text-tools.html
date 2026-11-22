@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Текстовые утилиты онлайн | КонвертерОнлайн</title>
+<meta name="description" content="Регистр, подсчёт слов и символов, нумерация строк и другие текстовые операции.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://konvertica.net/tools/text-tools.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+<script src="../js/ads-config.js" defer></script>
+<script src="../js/ads.js" defer></script>
+<script src="../js/app.js" defer></script>
+</head>
+<body data-tool="text">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html"><span class="logo-mark">⌁</span> КонвертерОнлайн</a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="../index.html">Главная</a>
+      <a href="../index.html#tools">Инструменты</a>
+      <a href="../about.html">О сайте</a>
+      <a href="../contact.html">Контакты</a>
+    </nav>
+    <button type="button" class="theme-toggle" data-theme-toggle title="Тёмная тема" aria-label="Переключить тёмную тему">🌙</button>
+  </div>
+</header>
+
+<main class="container">
+
+<div class="breadcrumbs"><a href="../index.html">Главная</a> / <span>Текстовые утилиты</span></div>
+<!-- Рекламный блок: header -->
+<div class="ad-slot ad-header" data-ad-slot="header"></div>
+<div class="page-head">
+  <h1>Текстовые утилиты онлайн</h1>
+  <p class="lead">Меняйте регистр, считайте слова и символы, нумеруйте строки и очищайте текст от лишних пробелов.</p>
+</div>
+<div class="tool-layout">
+  <div class="tool-main">
+    <section class="card tool-card-panel">
+
+      <div class="two-col">
+        <div class="field">
+          <label class="field-label" for="text-input">Ваш текст</label>
+          <textarea id="text-input" placeholder="Введите или вставьте текст" style="min-height:230px"></textarea>
+        </div>
+        <div class="field">
+          <label class="field-label" for="text-output">Результат</label>
+          <textarea id="text-output" readonly placeholder="Здесь появится результат" style="min-height:230px"></textarea>
+        </div>
+      </div>
+      <div class="stats"><span class="stat" id="text-stats">0 символов · 0 слов · 0 строк</span></div>
+      <div class="tool-actions">
+        <button type="button" class="btn" data-transform="upper">ВВЕРХНИЙ РЕГИСТР</button>
+        <button type="button" class="btn" data-transform="lower">нижний регистр</button>
+        <button type="button" class="btn" data-transform="title">Заглавные Слова</button>
+        <button type="button" class="btn" data-transform="sentence">По предложениям</button>
+        <button type="button" class="btn" data-transform="reverse">Перевернуть</button>
+        <button type="button" class="btn" data-transform="reverselines">Перевернуть строки</button>
+        <button type="button" class="btn" data-transform="trim">Убрать лишние пробелы</button>
+        <button type="button" class="btn" data-transform="emptylines">Убрать пустые строки</button>
+        <button type="button" class="btn" data-transform="number">Нумеровать строки</button>
+        <button type="button" class="btn" data-transform="unique">Только уникальные строки</button>
+      </div>
+      <div class="tool-actions">
+        <button type="button" class="btn btn-primary" id="text-to-input">Использовать результат как исходный</button>
+        <button type="button" class="btn" id="text-sample">Пример</button>
+        <button type="button" class="btn btn-sm" data-copy="text-output">Копировать</button>
+        <button type="button" class="btn" data-clear="text-input text-output">Очистить</button>
+      </div>
+      <div class="status" id="status" aria-live="polite"></div>
+
+    </section>
+    <!-- Рекламный блок: incontent -->
+<div class="ad-slot ad-incontent" data-ad-slot="incontent"></div>
+    <section class="card content-block">
+      <h2>О инструменте</h2>
+<p>Набор простых операций, которые часто нужны редакторам, студентам и всем, кто работает с текстом. Выберите действие — результат появится в правом поле, а исходник останется нетронутым.</p><p>Счётчик показывает символы с пробелами и без, количество слов и строк. Если результат понравился, нажмите «Использовать результат как исходный» и примените следующую операцию.</p>
+    </section>
+    <section class="card content-block faq">
+      <h2>Частые вопросы</h2>
+<details><summary>Текст сохраняется где-то?</summary><p>Нет. Все преобразования идут в памяти браузера.</p></details><details><summary>Как считаются слова?</summary><p>Как последовательности непробельных символов. Строки считаются по переносам.</p></details><details><summary>Можно ли обработать большой текст?</summary><p>Да, но очень большие объёмы (сотни тысяч символов) могут занять несколько секунд.</p></details>
+    </section>
+  </div>
+  <aside class="tool-side">
+    <!-- Рекламный блок: sidebar -->
+<div class="ad-slot ad-sidebar" data-ad-slot="sidebar"></div>
+    <div class="card">
+      <h3>Другие инструменты</h3>
+      <ul class="mini-links">
+<li><a href="image-converter.html">🖼️ Конвертер изображений</a></li><li><a href="json-formatter.html">🧩 Форматтер JSON</a></li><li><a href="csv-json.html">📊 CSV ↔ JSON</a></li><li><a href="base64.html">🔐 Base64</a></li><li><a href="url-encode.html">🔗 URL-кодировщик</a></li><li><a href="color-converter.html">🎨 Конвертер цветов</a></li><li><a href="hash-generator.html">#️⃣ Генератор хешей</a></li><li><a href="number-base.html">🔢 Системы счисления</a></li><li><a href="timestamp.html">⏱️ Unix-время</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p><strong>КонвертерОнлайн</strong> — бесплатные онлайн-инструменты. Файлы обрабатываются в вашем браузере и не отправляются на сервер.</p>
+    </div>
+    <div class="footer-links">
+      <a href="../about.html">О сайте</a>
+      <a href="../privacy.html">Политика конфиденциальности</a>
+      <a href="../contact.html">Контакты</a>
+    </div>
+  </div>
+  <!-- Рекламный блок: footer -->
+<div class="container ad-slot ad-footer" data-ad-slot="footer"></div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

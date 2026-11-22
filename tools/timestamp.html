@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unix-время в дату онлайн | КонвертерОнлайн</title>
+<meta name="description" content="Переведите Unix-метку времени в дату и обратно, с учётом локального времени и UTC.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://konvertica.net/tools/timestamp.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+<script src="../js/ads-config.js" defer></script>
+<script src="../js/ads.js" defer></script>
+<script src="../js/app.js" defer></script>
+</head>
+<body data-tool="timestamp">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html"><span class="logo-mark">⌁</span> КонвертерОнлайн</a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="../index.html">Главная</a>
+      <a href="../index.html#tools">Инструменты</a>
+      <a href="../about.html">О сайте</a>
+      <a href="../contact.html">Контакты</a>
+    </nav>
+    <button type="button" class="theme-toggle" data-theme-toggle title="Тёмная тема" aria-label="Переключить тёмную тему">🌙</button>
+  </div>
+</header>
+
+<main class="container">
+
+<div class="breadcrumbs"><a href="../index.html">Главная</a> / <span>Unix-время</span></div>
+<!-- Рекламный блок: header -->
+<div class="ad-slot ad-header" data-ad-slot="header"></div>
+<div class="page-head">
+  <h1>Unix-время в дату онлайн</h1>
+  <p class="lead">Конвертируйте секунды или миллисекунды с 1 января 1970 года в привычную дату и наоборот.</p>
+</div>
+<div class="tool-layout">
+  <div class="tool-main">
+    <section class="card tool-card-panel">
+
+      <div class="row">
+        <div class="field">
+          <label class="field-label" for="ts-unix">Unix-время</label>
+          <input type="text" id="ts-unix" inputmode="numeric" spellcheck="false">
+        </div>
+        <div class="field field-small">
+          <label class="field-label" for="ts-unit">Единица</label>
+          <select id="ts-unit">
+            <option value="s">Секунды</option>
+            <option value="ms">Миллисекунды</option>
+          </select>
+        </div>
+      </div>
+      <div class="tool-actions">
+        <button type="button" class="btn btn-primary" id="ts-from-unix">Время → дата</button>
+        <button type="button" class="btn" id="ts-now">Сейчас</button>
+      </div>
+      <div class="field">
+        <label class="field-label" for="ts-date">Дата и время (локальное)</label>
+        <input type="datetime-local" id="ts-date" step="1">
+      </div>
+      <div class="tool-actions">
+        <button type="button" class="btn btn-primary" id="ts-to-unix">Дата → Unix-время</button>
+      </div>
+      <div class="status" id="status" aria-live="polite"></div>
+      <div class="color-results" style="margin-top:18px">
+        <div class="color-result"><span>Локальное время</span><code id="ts-local">—</code><button type="button" class="btn btn-sm" data-copy="ts-local">Копировать</button></div>
+        <div class="color-result"><span>UTC</span><code id="ts-utc">—</code><button type="button" class="btn btn-sm" data-copy="ts-utc">Копировать</button></div>
+        <div class="color-result"><span>ISO 8601</span><code id="ts-iso">—</code><button type="button" class="btn btn-sm" data-copy="ts-iso">Копировать</button></div>
+      </div>
+
+    </section>
+    <!-- Рекламный блок: incontent -->
+<div class="ad-slot ad-incontent" data-ad-slot="incontent"></div>
+    <section class="card content-block">
+      <h2>О инструменте</h2>
+<p>Unix-время — количество секунд, прошедших с 1 января 1970 года (UTC). Оно активно используется в API, базах данных и логах, потому что не зависит от часового пояса.</p><p>Инструмент показывает дату в локальном времени, в UTC и в формате ISO 8601. Переключатель единиц позволяет работать и с миллисекундами.</p>
+    </section>
+    <section class="card content-block faq">
+      <h2>Частые вопросы</h2>
+<details><summary>Секунды или миллисекунды?</summary><p>В API чаще встречаются миллисекунды (13 цифр), в системах Unix — секунды (10 цифр). Выберите нужную единицу в выпадающем списке.</p></details><details><summary>Почему дата отличается на несколько часов?</summary><p>Локальное время зависит от часового пояса вашего устройства. Для сравнения используйте UTC или ISO 8601.</p></details><details><summary>Что показывает кнопка «Сейчас»?</summary><p>Текущее время в выбранных единицах и все формы даты.</p></details>
+    </section>
+  </div>
+  <aside class="tool-side">
+    <!-- Рекламный блок: sidebar -->
+<div class="ad-slot ad-sidebar" data-ad-slot="sidebar"></div>
+    <div class="card">
+      <h3>Другие инструменты</h3>
+      <ul class="mini-links">
+<li><a href="image-converter.html">🖼️ Конвертер изображений</a></li><li><a href="json-formatter.html">🧩 Форматтер JSON</a></li><li><a href="csv-json.html">📊 CSV ↔ JSON</a></li><li><a href="base64.html">🔐 Base64</a></li><li><a href="url-encode.html">🔗 URL-кодировщик</a></li><li><a href="text-tools.html">✍️ Текстовые утилиты</a></li><li><a href="color-converter.html">🎨 Конвертер цветов</a></li><li><a href="hash-generator.html">#️⃣ Генератор хешей</a></li><li><a href="number-base.html">🔢 Системы счисления</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p><strong>КонвертерОнлайн</strong> — бесплатные онлайн-инструменты. Файлы обрабатываются в вашем браузере и не отправляются на сервер.</p>
+    </div>
+    <div class="footer-links">
+      <a href="../about.html">О сайте</a>
+      <a href="../privacy.html">Политика конфиденциальности</a>
+      <a href="../contact.html">Контакты</a>
+    </div>
+  </div>
+  <!-- Рекламный блок: footer -->
+<div class="container ad-slot ad-footer" data-ad-slot="footer"></div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

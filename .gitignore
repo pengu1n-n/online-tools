@@ -1,0 +1,17 @@
+# Временные и системные файлы
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Настройки редакторов
+.vscode/
+.idea/
+
+# Зависимости (если появятся позже)
+node_modules/
+
+# Локальный Python
+__pycache__/
+*.pyc

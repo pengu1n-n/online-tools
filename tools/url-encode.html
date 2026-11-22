@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>URL-кодировщик онлайн | КонвертерОнлайн</title>
+<meta name="description" content="Закодируйте или декодируйте URL и параметры запроса, включая кириллицу.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://konvertica.net/tools/url-encode.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+<script src="../js/ads-config.js" defer></script>
+<script src="../js/ads.js" defer></script>
+<script src="../js/app.js" defer></script>
+</head>
+<body data-tool="url">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html"><span class="logo-mark">⌁</span> КонвертерОнлайн</a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="../index.html">Главная</a>
+      <a href="../index.html#tools">Инструменты</a>
+      <a href="../about.html">О сайте</a>
+      <a href="../contact.html">Контакты</a>
+    </nav>
+    <button type="button" class="theme-toggle" data-theme-toggle title="Тёмная тема" aria-label="Переключить тёмную тему">🌙</button>
+  </div>
+</header>
+
+<main class="container">
+
+<div class="breadcrumbs"><a href="../index.html">Главная</a> / <span>URL-кодировщик</span></div>
+<!-- Рекламный блок: header -->
+<div class="ad-slot ad-header" data-ad-slot="header"></div>
+<div class="page-head">
+  <h1>URL-кодировщик онлайн</h1>
+  <p class="lead">Преобразуйте строку в безопасный для URL вид или расшифруйте готовую ссылку. Поддерживается кириллица и пробелы.</p>
+</div>
+<div class="tool-layout">
+  <div class="tool-main">
+    <section class="card tool-card-panel">
+
+      <div class="field">
+        <label class="field-label" for="url-mode">Действие</label>
+        <select id="url-mode">
+          <option value="encode">Закодировать URL</option>
+          <option value="decode">Декодировать URL</option>
+        </select>
+      </div>
+      <div class="two-col">
+        <div class="field">
+          <label class="field-label" for="url-input">Строка</label>
+          <textarea id="url-input" placeholder="https://konvertica.net/?q=..." spellcheck="false"></textarea>
+        </div>
+        <div class="field">
+          <label class="field-label" for="url-output">Результат</label>
+          <textarea id="url-output" readonly placeholder="Здесь появится результат" spellcheck="false"></textarea>
+        </div>
+      </div>
+      <div class="field">
+        <label class="checkbox-row"><input type="checkbox" id="url-plus"> Пробелы как «+» (для параметров запроса)</label>
+      </div>
+      <div class="tool-actions">
+        <button type="button" class="btn btn-primary" id="url-convert">Выполнить</button>
+        <button type="button" class="btn" id="url-swap">Поменять местами</button>
+        <button type="button" class="btn" id="url-sample">Пример</button>
+        <button type="button" class="btn btn-sm" data-copy="url-output">Копировать</button>
+        <button type="button" class="btn" data-clear="url-input url-output">Очистить</button>
+      </div>
+      <div class="status" id="status" aria-live="polite"></div>
+
+    </section>
+    <!-- Рекламный блок: incontent -->
+<div class="ad-slot ad-incontent" data-ad-slot="incontent"></div>
+    <section class="card content-block">
+      <h2>О инструменте</h2>
+<p>В адресе страницы можно использовать не все символы: пробелы, кириллица и знаки вроде «&» или «?» имеют особое значение. Кодирование заменяет их на последовательности вида %D0%9F.</p><p>Если вы кодируете значение параметра запроса, включите опцию «Пробелы как +» — так результат будет соответствовать правилам HTML-форм.</p>
+    </section>
+    <section class="card content-block faq">
+      <h2>Частые вопросы</h2>
+<details><summary>Чем encodeURIComponent отличается от encodeURI?</summary><p>encodeURIComponent кодирует больше символов, включая «/», «?», «&», поэтому подходит для отдельных параметров.</p></details><details><summary>Почему появились знаки %?</summary><p>Так записываются байты символа в Percent-encoding. Это стандарт для URL.</p></details><details><summary>Можно ли декодировать чужую ссылку?</summary><p>Да, просто вставьте её и выберите «Декодировать URL».</p></details>
+    </section>
+  </div>
+  <aside class="tool-side">
+    <!-- Рекламный блок: sidebar -->
+<div class="ad-slot ad-sidebar" data-ad-slot="sidebar"></div>
+    <div class="card">
+      <h3>Другие инструменты</h3>
+      <ul class="mini-links">
+<li><a href="image-converter.html">🖼️ Конвертер изображений</a></li><li><a href="json-formatter.html">🧩 Форматтер JSON</a></li><li><a href="csv-json.html">📊 CSV ↔ JSON</a></li><li><a href="base64.html">🔐 Base64</a></li><li><a href="text-tools.html">✍️ Текстовые утилиты</a></li><li><a href="color-converter.html">🎨 Конвертер цветов</a></li><li><a href="hash-generator.html">#️⃣ Генератор хешей</a></li><li><a href="number-base.html">🔢 Системы счисления</a></li><li><a href="timestamp.html">⏱️ Unix-время</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p><strong>КонвертерОнлайн</strong> — бесплатные онлайн-инструменты. Файлы обрабатываются в вашем браузере и не отправляются на сервер.</p>
+    </div>
+    <div class="footer-links">
+      <a href="../about.html">О сайте</a>
+      <a href="../privacy.html">Политика конфиденциальности</a>
+      <a href="../contact.html">Контакты</a>
+    </div>
+  </div>
+  <!-- Рекламный блок: footer -->
+<div class="container ad-slot ad-footer" data-ad-slot="footer"></div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Конвертер изображений онлайн | КонвертерОнлайн</title>
+<meta name="description" content="Меняйте формат картинок (PNG, JPG, WebP), размер и качество прямо в браузере.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://konvertica.net/tools/image-converter.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+<script src="../js/ads-config.js" defer></script>
+<script src="../js/ads.js" defer></script>
+<script src="../js/app.js" defer></script>
+</head>
+<body data-tool="image">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html"><span class="logo-mark">⌁</span> КонвертерОнлайн</a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="../index.html">Главная</a>
+      <a href="../index.html#tools">Инструменты</a>
+      <a href="../about.html">О сайте</a>
+      <a href="../contact.html">Контакты</a>
+    </nav>
+    <button type="button" class="theme-toggle" data-theme-toggle title="Тёмная тема" aria-label="Переключить тёмную тему">🌙</button>
+  </div>
+</header>
+
+<main class="container">
+
+<div class="breadcrumbs"><a href="../index.html">Главная</a> / <span>Конвертер изображений</span></div>
+<!-- Рекламный блок: header -->
+<div class="ad-slot ad-header" data-ad-slot="header"></div>
+<div class="page-head">
+  <h1>Конвертер изображений онлайн</h1>
+  <p class="lead">Переведите PNG в JPG, JPG в WebP или измените размер картинки. Файл обрабатывается локально и не загружается на сервер.</p>
+</div>
+<div class="tool-layout">
+  <div class="tool-main">
+    <section class="card tool-card-panel">
+
+      <div class="field">
+        <label class="field-label" for="img-file">Выберите изображение</label>
+        <div class="dropzone" id="img-drop" tabindex="0" role="button" aria-label="Выбрать изображение">
+          <div class="dropzone-icon">📂</div>
+          <strong>Перетащите файл сюда или нажмите</strong>
+          <span>PNG, JPG, WebP, GIF, BMP · файл не покидает ваше устройство</span>
+        </div>
+        <input type="file" id="img-file" accept="image/*" class="hidden">
+      </div>
+      <div class="preview-wrap" id="img-preview-wrap" hidden>
+        <img id="img-preview" alt="Предпросмотр загруженного изображения">
+      </div>
+      <div class="two-col" style="margin-top:18px">
+        <div class="field">
+          <label class="field-label" for="img-format">Формат результата</label>
+          <select id="img-format">
+            <option value="png">PNG — без потери качества, прозрачность</option>
+            <option value="jpeg" selected>JPG — меньше размер</option>
+            <option value="webp">WebP — современный формат</option>
+          </select>
+        </div>
+        <div class="field" id="img-quality-field">
+          <label class="field-label" for="img-quality">Качество: <span id="img-quality-val">85</span>%</label>
+          <input type="range" id="img-quality" min="10" max="100" value="85">
+        </div>
+      </div>
+      <div class="field" id="img-bg-field">
+        <label class="field-label" for="img-bg">Цвет фона для JPG/WebP (если есть прозрачность)</label>
+        <input type="color" id="img-bg" value="#ffffff">
+      </div>
+      <div class="row">
+        <div class="field">
+          <label class="field-label" for="img-width">Ширина, px</label>
+          <input type="number" id="img-width" min="1" max="16384" placeholder="Авто">
+        </div>
+        <div class="field">
+          <label class="field-label" for="img-height">Высота, px</label>
+          <input type="number" id="img-height" min="1" max="16384" placeholder="Авто">
+        </div>
+        <div class="field field-small">
+          <label class="checkbox-row"><input type="checkbox" id="img-keep-ratio" checked> Сохранять пропорции</label>
+        </div>
+      </div>
+      <div class="tool-actions">
+        <button type="button" class="btn btn-primary" id="img-convert">Преобразовать</button>
+        <button type="button" class="btn" id="img-download" disabled>Скачать файл ⬇</button>
+      </div>
+      <div class="status" id="status" aria-live="polite"></div>
+      <div class="stats">
+        <span class="stat" id="img-original">Исходник: —</span>
+        <span class="stat" id="img-result">Результат: —</span>
+      </div>
+
+    </section>
+    <!-- Рекламный блок: incontent -->
+<div class="ad-slot ad-incontent" data-ad-slot="incontent"></div>
+    <section class="card content-block">
+      <h2>О инструменте</h2>
+<p>Инструмент работает через Canvas API: изображение читается браузером, после чего вы получаете готовый файл для скачивания. Никакой загрузки на сервер, никаких очередей и ограничений на количество обработок.</p><p>Формат PNG подходит, когда важна прозрачность и точность деталей. JPG лучше для фотографий — он даёт меньший размер файла. WebP — современный формат, который обычно выигрывает и в качестве, и в размере.</p>
+    </section>
+    <section class="card content-block faq">
+      <h2>Частые вопросы</h2>
+<details><summary>Куда загружается моё изображение?</summary><p>Никуда. Вся обработка происходит в вашем браузере с помощью JavaScript, файл не отправляется по сети.</p></details><details><summary>Почему JPG имеет белый фон вместо прозрачности?</summary><p>Формат JPG не поддерживает прозрачность. Для него на место прозрачных пикселей вставляется выбранный вами цвет фона.</p></details><details><summary>Можно ли уменьшить размер фотографии?</summary><p>Да. Укажите нужную ширину или высоту — вторая сторона рассчитается автоматически, если включено сохранение пропорций.</p></details>
+    </section>
+  </div>
+  <aside class="tool-side">
+    <!-- Рекламный блок: sidebar -->
+<div class="ad-slot ad-sidebar" data-ad-slot="sidebar"></div>
+    <div class="card">
+      <h3>Другие инструменты</h3>
+      <ul class="mini-links">
+<li><a href="json-formatter.html">🧩 Форматтер JSON</a></li><li><a href="csv-json.html">📊 CSV ↔ JSON</a></li><li><a href="base64.html">🔐 Base64</a></li><li><a href="url-encode.html">🔗 URL-кодировщик</a></li><li><a href="text-tools.html">✍️ Текстовые утилиты</a></li><li><a href="color-converter.html">🎨 Конвертер цветов</a></li><li><a href="hash-generator.html">#️⃣ Генератор хешей</a></li><li><a href="number-base.html">🔢 Системы счисления</a></li><li><a href="timestamp.html">⏱️ Unix-время</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p><strong>КонвертерОнлайн</strong> — бесплатные онлайн-инструменты. Файлы обрабатываются в вашем браузере и не отправляются на сервер.</p>
+    </div>
+    <div class="footer-links">
+      <a href="../about.html">О сайте</a>
+      <a href="../privacy.html">Политика конфиденциальности</a>
+      <a href="../contact.html">Контакты</a>
+    </div>
+  </div>
+  <!-- Рекламный блок: footer -->
+<div class="container ad-slot ad-footer" data-ad-slot="footer"></div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

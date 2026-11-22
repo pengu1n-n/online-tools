@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Конвертер цветов HEX, RGB, HSL онлайн | КонвертерОнлайн</title>
+<meta name="description" content="HEX, RGB, HSL и HSV — переводите цвета между форматами в реальном времени.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://konvertica.net/tools/color-converter.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+<script src="../js/ads-config.js" defer></script>
+<script src="../js/ads.js" defer></script>
+<script src="../js/app.js" defer></script>
+</head>
+<body data-tool="color">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html"><span class="logo-mark">⌁</span> КонвертерОнлайн</a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="../index.html">Главная</a>
+      <a href="../index.html#tools">Инструменты</a>
+      <a href="../about.html">О сайте</a>
+      <a href="../contact.html">Контакты</a>
+    </nav>
+    <button type="button" class="theme-toggle" data-theme-toggle title="Тёмная тема" aria-label="Переключить тёмную тему">🌙</button>
+  </div>
+</header>
+
+<main class="container">
+
+<div class="breadcrumbs"><a href="../index.html">Главная</a> / <span>Конвертер цветов</span></div>
+<!-- Рекламный блок: header -->
+<div class="ad-slot ad-header" data-ad-slot="header"></div>
+<div class="page-head">
+  <h1>Конвертер цветов HEX, RGB, HSL онлайн</h1>
+  <p class="lead">Подберите цвет визуально или введите код вручную — все форматы обновляются мгновенно.</p>
+</div>
+<div class="tool-layout">
+  <div class="tool-main">
+    <section class="card tool-card-panel">
+
+      <div class="color-preview" id="color-preview"></div>
+      <div class="row" style="margin-bottom:18px">
+        <div class="field field-small"><label class="field-label" for="color-picker">Выбор цвета</label><input type="color" id="color-picker" value="#4f46e5"></div>
+        <div class="field"><label class="field-label" for="color-hex">HEX</label><input type="text" id="color-hex" value="#4F46E5" spellcheck="false"></div>
+      </div>
+      <h3>RGB</h3>
+      <div class="slider-line"><span>R</span><input type="range" id="color-r" min="0" max="255" value="79"><output id="color-r-val">79</output></div>
+      <div class="slider-line"><span>G</span><input type="range" id="color-g" min="0" max="255" value="70"><output id="color-g-val">70</output></div>
+      <div class="slider-line"><span>B</span><input type="range" id="color-b" min="0" max="255" value="229"><output id="color-b-val">229</output></div>
+      <h3 style="margin-top:20px">HSL</h3>
+      <div class="slider-line"><span>H</span><input type="range" id="color-h" min="0" max="360" value="243"><output id="color-h-val">243</output></div>
+      <div class="slider-line"><span>S</span><input type="range" id="color-s" min="0" max="100" value="76"><output id="color-s-val">76</output></div>
+      <div class="slider-line"><span>L</span><input type="range" id="color-l" min="0" max="100" value="59"><output id="color-l-val">59</output></div>
+      <div class="tool-actions"><button type="button" class="btn" id="color-random">Случайный цвет 🎲</button></div>
+      <h3 style="margin-top:20px">Значения</h3>
+      <div class="color-results">
+        <div class="color-result"><span>HEX</span><code id="out-hex">#4F46E5</code><button type="button" class="btn btn-sm" data-copy="out-hex">Копировать</button></div>
+        <div class="color-result"><span>RGB</span><code id="out-rgb">rgb(79, 70, 229)</code><button type="button" class="btn btn-sm" data-copy="out-rgb">Копировать</button></div>
+        <div class="color-result"><span>HSL</span><code id="out-hsl">hsl(243, 76%, 59%)</code><button type="button" class="btn btn-sm" data-copy="out-hsl">Копировать</button></div>
+        <div class="color-result"><span>HSV</span><code id="out-hsv">hsv(245, 69%, 90%)</code><button type="button" class="btn btn-sm" data-copy="out-hsv">Копировать</button></div>
+      </div>
+      <div class="status" id="status" aria-live="polite"></div>
+
+    </section>
+    <!-- Рекламный блок: incontent -->
+<div class="ad-slot ad-incontent" data-ad-slot="incontent"></div>
+    <section class="card content-block">
+      <h2>О инструменте</h2>
+<p>Дизайнерам и разработчикам часто нужно перевести цвет из одного формата в другой. Здесь достаточно дважды кликнуть по нужному значению, чтобы скопировать его в буфер обмена.</p><p>HEX удобен для CSS, RGB — для графики, HSL — для подбора оттенков, HSV — для выбора насыщенности и яркости.</p>
+    </section>
+    <section class="card content-block faq">
+      <h2>Частые вопросы</h2>
+<details><summary>Какой формат лучше для CSS?</summary><p>Обычно используют HEX или rgb(). HSL удобен, когда нужно менять оттенок программно.</p></details><details><summary>Что означает HEX из трёх символов?</summary><p>Это сокращённая запись: #abc равно #aabbcc.</p></details><details><summary>Можно ли скопировать результат?</summary><p>Да, кнопка «Копировать» рядом с каждым значением.</p></details>
+    </section>
+  </div>
+  <aside class="tool-side">
+    <!-- Рекламный блок: sidebar -->
+<div class="ad-slot ad-sidebar" data-ad-slot="sidebar"></div>
+    <div class="card">
+      <h3>Другие инструменты</h3>
+      <ul class="mini-links">
+<li><a href="image-converter.html">🖼️ Конвертер изображений</a></li><li><a href="json-formatter.html">🧩 Форматтер JSON</a></li><li><a href="csv-json.html">📊 CSV ↔ JSON</a></li><li><a href="base64.html">🔐 Base64</a></li><li><a href="url-encode.html">🔗 URL-кодировщик</a></li><li><a href="text-tools.html">✍️ Текстовые утилиты</a></li><li><a href="hash-generator.html">#️⃣ Генератор хешей</a></li><li><a href="number-base.html">🔢 Системы счисления</a></li><li><a href="timestamp.html">⏱️ Unix-время</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p><strong>КонвертерОнлайн</strong> — бесплатные онлайн-инструменты. Файлы обрабатываются в вашем браузере и не отправляются на сервер.</p>
+    </div>
+    <div class="footer-links">
+      <a href="../about.html">О сайте</a>
+      <a href="../privacy.html">Политика конфиденциальности</a>
+      <a href="../contact.html">Контакты</a>
+    </div>
+  </div>
+  <!-- Рекламный блок: footer -->
+<div class="container ad-slot ad-footer" data-ad-slot="footer"></div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

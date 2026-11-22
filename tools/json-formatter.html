@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Форматтер JSON онлайн | КонвертерОнлайн</title>
+<meta name="description" content="Красиво отформатируйте, проверьте или минифицируйте JSON за один клик.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#4f46e5">
+<link rel="canonical" href="https://konvertica.net/tools/json-formatter.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+<script src="../js/ads-config.js" defer></script>
+<script src="../js/ads.js" defer></script>
+<script src="../js/app.js" defer></script>
+</head>
+<body data-tool="json">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html"><span class="logo-mark">⌁</span> КонвертерОнлайн</a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="../index.html">Главная</a>
+      <a href="../index.html#tools">Инструменты</a>
+      <a href="../about.html">О сайте</a>
+      <a href="../contact.html">Контакты</a>
+    </nav>
+    <button type="button" class="theme-toggle" data-theme-toggle title="Тёмная тема" aria-label="Переключить тёмную тему">🌙</button>
+  </div>
+</header>
+
+<main class="container">
+
+<div class="breadcrumbs"><a href="../index.html">Главная</a> / <span>Форматтер JSON</span></div>
+<!-- Рекламный блок: header -->
+<div class="ad-slot ad-header" data-ad-slot="header"></div>
+<div class="page-head">
+  <h1>Форматтер JSON онлайн</h1>
+  <p class="lead">Вставьте JSON, чтобы сделать его читаемым, проверить синтаксис или уменьшить размер. Работает мгновенно и без регистрации.</p>
+</div>
+<div class="tool-layout">
+  <div class="tool-main">
+    <section class="card tool-card-panel">
+
+      <div class="two-col">
+        <div class="field">
+          <label class="field-label" for="json-input">Вставьте JSON</label>
+          <textarea id="json-input" placeholder='{"ключ": "значение"}' spellcheck="false"></textarea>
+        </div>
+        <div class="field">
+          <label class="field-label" for="json-output">Результат</label>
+          <textarea id="json-output" readonly placeholder="Здесь появится результат" spellcheck="false"></textarea>
+        </div>
+      </div>
+      <div class="field">
+        <label class="field-label" for="json-indent">Отступы</label>
+        <select id="json-indent">
+          <option value="2">2 пробела</option>
+          <option value="4">4 пробела</option>
+          <option value="tab">Табуляция</option>
+        </select>
+      </div>
+      <div class="tool-actions">
+        <button type="button" class="btn btn-primary" id="json-format">Форматировать</button>
+        <button type="button" class="btn" id="json-minify">Минифицировать</button>
+        <button type="button" class="btn" id="json-validate">Проверить</button>
+        <button type="button" class="btn" id="json-swap">Поменять местами</button>
+        <button type="button" class="btn" id="json-sample">Пример</button>
+        <button type="button" class="btn btn-sm" data-copy="json-output">Копировать</button>
+        <button type="button" class="btn btn-sm" data-copy="json-input">Копировать исходник</button>
+        <button type="button" class="btn" data-clear="json-input json-output">Очистить</button>
+      </div>
+      <div class="status" id="status" aria-live="polite"></div>
+      <div class="stats"><span class="stat" id="json-stats">0 символов · 0 строк</span></div>
+
+    </section>
+    <!-- Рекламный блок: incontent -->
+<div class="ad-slot ad-incontent" data-ad-slot="incontent"></div>
+    <section class="card content-block">
+      <h2>О инструменте</h2>
+<p>Форматтер расставляет отступы и переносы, чтобы структуру данных было удобно читать. Опция минификации, наоборот, убирает все лишние пробелы — это полезно для API и конфигов.</p><p>Если в JSON есть ошибка, инструмент покажет сообщение браузера с указанием проблемного места. Исправьте его и повторите операцию.</p>
+    </section>
+    <section class="card content-block faq">
+      <h2>Частые вопросы</h2>
+<details><summary>Что такое минификация JSON?</summary><p>Это удаление пробелов и переносов строк без изменения данных. Такой файл занимает меньше места.</p></details><details><summary>Можно ли форматировать JSON с кириллицей?</summary><p>Да, кириллица и эмодзи сохраняются без искажений.</p></details><details><summary>Нужно ли регистрироваться?</summary><p>Нет. Инструмент полностью бесплатный и работает в браузере.</p></details>
+    </section>
+  </div>
+  <aside class="tool-side">
+    <!-- Рекламный блок: sidebar -->
+<div class="ad-slot ad-sidebar" data-ad-slot="sidebar"></div>
+    <div class="card">
+      <h3>Другие инструменты</h3>
+      <ul class="mini-links">
+<li><a href="image-converter.html">🖼️ Конвертер изображений</a></li><li><a href="csv-json.html">📊 CSV ↔ JSON</a></li><li><a href="base64.html">🔐 Base64</a></li><li><a href="url-encode.html">🔗 URL-кодировщик</a></li><li><a href="text-tools.html">✍️ Текстовые утилиты</a></li><li><a href="color-converter.html">🎨 Конвертер цветов</a></li><li><a href="hash-generator.html">#️⃣ Генератор хешей</a></li><li><a href="number-base.html">🔢 Системы счисления</a></li><li><a href="timestamp.html">⏱️ Unix-время</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p><strong>КонвертерОнлайн</strong> — бесплатные онлайн-инструменты. Файлы обрабатываются в вашем браузере и не отправляются на сервер.</p>
+    </div>
+    <div class="footer-links">
+      <a href="../about.html">О сайте</a>
+      <a href="../privacy.html">Политика конфиденциальности</a>
+      <a href="../contact.html">Контакты</a>
+    </div>
+  </div>
+  <!-- Рекламный блок: footer -->
+<div class="container ad-slot ad-footer" data-ad-slot="footer"></div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
